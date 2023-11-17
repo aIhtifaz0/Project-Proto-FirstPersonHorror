@@ -41,6 +41,7 @@ public class MainState : PlayerBaseState{
 
             if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter)) {
                 if (clearCounter != selectedCounter) {
+                    Debug.Log("Interact");
                     SetSelectedCounter(clearCounter);
                 }
             }
